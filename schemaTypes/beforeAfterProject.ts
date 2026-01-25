@@ -1,9 +1,8 @@
-// schemaTypes/beforeAfterProject.ts
-import { defineField, defineType } from 'sanity'
+import { defineType, defineField } from 'sanity'
 
 export const beforeAfterProject = defineType({
   name: 'beforeAfterProject',
-  title: 'Przed / Po – realizacja',
+  title: 'Karuzela Przed / Po – realizacja',
   type: 'document',
   fields: [
     defineField({
