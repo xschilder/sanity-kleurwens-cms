@@ -1,0 +1,95 @@
+// schemaTypes/quickDecisionMotivation.js
+export default {
+  name: 'quickDecisionMotivation',
+  title: 'Quick Decision Motivation (dla wycen < €1800)',
+  type: 'document',
+  options: { isSingleton: true },
+  fields: [
+    {
+      name: 'title',
+      title: 'Tytuł (NL)',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'title_en',
+      title: 'Title (EN)',
+      type: 'string',
+    },
+    {
+      name: 'title_pl',
+      title: 'Tytuł (PL)',
+      type: 'string',
+    },
+
+    {
+      name: 'mainText',
+      title: 'Główny tekst (Portable Text – NL)',
+      type: 'array',
+      of: [{ type: 'block' }],
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'mainText_en',
+      title: 'Main text (EN)',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+    {
+      name: 'mainText_pl',
+      title: 'Główny tekst (PL)',
+      type: 'array',
+      of: [{ type: 'block' }],
+    },
+
+    {
+      name: 'highlightText',
+      title: 'Tekst wyróżniony (bold/important – NL)',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'highlightText_en',
+      title: 'Highlighted text (EN)',
+      type: 'string',
+    },
+    {
+      name: 'highlightText_pl',
+      title: 'Tekst wyróżniony (PL)',
+      type: 'string',
+    },
+
+    {
+      name: 'icon',
+      title: 'Ikona (lucide name)',
+      type: 'string',
+      options: {
+        list: [
+          { title: 'Clock', value: 'Clock' },
+          { title: 'Percent', value: 'Percent' },
+          { title: 'Zap', value: 'Zap' },
+          { title: 'Gift', value: 'Gift' },
+        ],
+      },
+      validation: Rule => Rule.required(),
+    },
+
+    {
+      name: 'ctaLabel',
+      title: 'Etykieta przycisku CTA (NL)',
+      type: 'string',
+      initialValue: 'Umów bezpłatną wizytę',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'ctaLabel_en',
+      title: 'CTA Label (EN)',
+      type: 'string',
+    },
+    {
+      name: 'ctaLabel_pl',
+      title: 'Etykieta CTA (PL)',
+      type: 'string',
+    },
+  ],
+};
