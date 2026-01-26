@@ -1,6 +1,6 @@
 // schemaTypes/index.ts
 import { beforeAfterProject } from './beforeAfterProject'
-import { testimonial } from './testimonials'
+import { testimonial } from './testimonial'
 import { project } from './project' // jeśli zostawiłeś poprzedni
 
 export const schemaTypes = [
