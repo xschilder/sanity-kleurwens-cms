@@ -1,4 +1,4 @@
-// schemaTypes/quickDecisionMotivation.js
+// schemaTypes/quickDecisionMotivation.ts
 export default {
   name: 'quickDecisionMotivation',
   title: 'Quick Decision Motivation (dla wycen < €1800)',
