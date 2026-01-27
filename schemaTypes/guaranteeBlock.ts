@@ -1,4 +1,6 @@
 // schemaTypes/guaranteeBlock.ts
+import { defineType, defineField } from 'sanity';
+
 export default defineType({
   name: 'guaranteeBlock',
   title: 'Guarantee Block (≥ €1800)',
@@ -25,7 +27,7 @@ export default defineType({
     defineField({
       name: 'items',
       title: 'Punkty gwarancji',
-      type: 'array',
+      type: 'array',  // ← poprawione: type array
       of: [
         defineField({
           type: 'object',
@@ -40,7 +42,7 @@ export default defineType({
             defineField({
               name: 'text',
               title: 'Tekst (NL)',
-              type: 'text',  // ← zwykły text zamiast array of block
+              type: 'text',  // zwykły tekst wielolinijkowy – bez portable text
               validation: Rule => Rule.required(),
             }),
             defineField({
