@@ -8,6 +8,8 @@ import { project } from './project' // jeśli nadal używasz
 // Dla nowych singletonów używamy default import + rename
 import guaranteeBlockRaw from './guaranteeBlock'
 import quickDecisionMotivationRaw from './quickDecisionMotivation'
+// schemas/index.ts lub schema.ts
+import privacyPolicy from './privacyPolicy'
 
 // Eksportujemy tablicę schematów (Sanity oczekuje tej tablicy)
 export const schemaTypes = [
@@ -16,6 +18,7 @@ export const schemaTypes = [
   project,
   guaranteeBlockRaw,
   quickDecisionMotivationRaw,
+  privacyPolicy,
 ]
 
 // Opcjonalnie – eksportujemy też pojedyncze typy, jeśli ktoś je importuje bezpośrednio
