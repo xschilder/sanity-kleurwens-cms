@@ -7,7 +7,6 @@ export default defineType({
   title: 'Polityka prywatności',
   type: 'document',
   // singleton – chcemy tylko jeden taki dokument
-  __experimental_actions: ['update', /* 'create', 'delete' */, 'publish'],
   fields: [
     defineField({
       name: 'title',
