@@ -10,6 +10,9 @@ import guaranteeBlockRaw from './guaranteeBlock'
 import quickDecisionMotivationRaw from './quickDecisionMotivation'
 // schemas/index.ts lub schema.ts
 import privacyPolicy from './privacyPolicy'
+import collaborationBlock from './collaborationBlock'
+import faqItemfrom from './faqItem'
+import aboutBlock from './aboutBlock'
 
 // Eksportujemy tablicę schematów (Sanity oczekuje tej tablicy)
 export const schemaTypes = [
@@ -19,6 +22,9 @@ export const schemaTypes = [
   guaranteeBlockRaw,
   quickDecisionMotivationRaw,
   privacyPolicy,
+  collaborationBlock,
+  faqItemfrom,
+  aboutBlock,
 ]
 
 // Opcjonalnie – eksportujemy też pojedyncze typy, jeśli ktoś je importuje bezpośrednio

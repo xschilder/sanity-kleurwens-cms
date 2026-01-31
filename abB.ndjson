@@ -1,0 +1,23 @@
+{
+  "_type": "aboutBlock",
+  "title": "Kleur Wens – Uw Ruimte de Mooiste",
+  "mainText": [
+    {
+      "_type": "block",
+      "children": [
+        {
+          "_type": "span",
+          "text": "Heb je je ooit afgevraagd waarom je muren gewoon... muren zijn?\n\nIk ben niet zomaar een schilder. Ik ben een kleurentovenaar en je nieuwe beste vriend in de strijd tegen saaie ruimtes.\n\nStel je dit voor: je nodigt vrienden uit en ze zeggen: \"Heb je een goochelaar ingehuurd?\" Omdat ik je ruimte transformeer in een meesterwerk – of in ieder geval iets dat er beter uitziet dan je laatste doe-het-zelf poging.\n\nOnthoud: het leven is te kort voor saaie muren."
+        }
+      ]
+    }
+  ],
+  "highlights": [
+    "Vanaf €6 / m²",
+    "100% klus geklaard",
+    "Gedetailleerd & netjes werk",
+    "Vriendelijk en betrouwbaar team",
+    "3 jaar garantie op materiaal en arbeid",
+    "DBA-compliant voor aannemers en ZZP"
+  ]
+}
