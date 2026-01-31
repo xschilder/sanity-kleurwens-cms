@@ -27,3 +27,8 @@
 
 # Dotenv and similar local-only files
 *.local
+
+.env
+*.local
+node_modules
+dist
