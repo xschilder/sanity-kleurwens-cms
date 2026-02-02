@@ -14,6 +14,7 @@ import collaborationBlock from './collaborationBlock'
 import faqItemfrom from './faqItem'
 import aboutBlock from './aboutBlock'
 import companySettings from './companySettings';
+import offerTemplate from './offerTemplate';
 
 // Eksportujemy tablicę schematów (Sanity oczekuje tej tablicy)
 export const schemaTypes = [
@@ -27,6 +28,7 @@ export const schemaTypes = [
   faqItemfrom,
   aboutBlock,
   companySettings,
+  offerTemplate,
 ]
 
 // Opcjonalnie – eksportujemy też pojedyncze typy, jeśli ktoś je importuje bezpośrednio
