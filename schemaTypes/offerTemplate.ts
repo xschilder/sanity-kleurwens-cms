@@ -9,18 +9,26 @@ export default {
   fields: [
     // 1. Powitanie + wstęp
     {
-      name: 'wstep',
-      title: 'Powitanie + wstęp (Geachte {imie}...)',
-      type: 'text',
-      rows: 8,
-      initialValue: `Geachte {imie},
+    name: 'wstep_zewnetrzne',
+    title: 'Wstęp – malowanie zewnętrzne',
+    type: 'text',
+    rows: 8,
+    initialValue: `Geachte {imie},
 
-Met veel plezier bieden wij u offerte aan voor het schilderen van de {adres}.
-Onze offertes zijn gebaseerd op de recente inspectie en werkopname van {data_inspekcji}.
+Met veel plezier bieden wij u offerte aan voor het buitenschilderwerk aan de {adres}.
+Onze offerte is gebaseerd op de inspectie van {data_inspekcji}.`,
+  },
+	
+	{
+    name: 'wstep_wewnetrzne',
+    title: 'Wstęp – malowanie wewnętrzne',
+    type: 'text',
+    rows: 8,
+    initialValue: `Geachte {imie},
 
-Hartelijk dank voor het gesprek en de inspectie. Hieronder de offerte op basis van onze bevindingen: {krotki_opis_zakresu}.`,
-      description: 'Użyj placeholderów: {imie}, {adres}, {data_inspekcji}, {krotki_opis_zakresu}',
-    },
+Met veel plezier bieden wij u offerte aan voor het binnenschilderwerk in de {adres}.
+Onze offerte is gebaseerd op de inspectie van {data_inspekcji}.`,
+  },
 
     // 2. Specyficzne ustalenia z inspekcji
     {
